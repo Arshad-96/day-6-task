@@ -1,0 +1,51 @@
+// Write a “person” class to hold all the details.
+
+class Person {
+  constructor(name, age, email) {
+    this.name = name;
+    this.age = age;
+    this.email = email;
+  }
+
+  // Getter methods
+  getName() {
+    return this.name;
+  }
+
+  getAge() {
+    return this.age;
+  }
+
+  getEmail() {
+    return this.email;
+  }
+
+  // Setter methods
+  setName(name) {
+    this.name = name;
+  }
+
+  setAge(age) {
+    this.age = age;
+  }
+
+  setEmail(email) {
+    this.email = email;
+  }
+
+  // Additional methods
+  toString() {
+    return `Name: ${this.name}, Age: ${this.age}, Email: ${this.email}`;
+  }
+}
+
+// Usage example:
+const person1 = new Person("John Doe", 30, "john@example.com");
+console.log(person1.toString());
+
+// Updating properties
+person1.setAge(31);
+console.log(person1.toString());
+
+
+//ouput:
